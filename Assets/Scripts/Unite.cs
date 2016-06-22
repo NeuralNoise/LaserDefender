@@ -18,7 +18,6 @@ public class Unite : MonoBehaviour , IDamageable
 
     protected virtual void Destroy()
     {
-        Debug.Log("here");
         AudioSource.PlayClipAtPoint(deathSound, transform.position,10.0f);
         Destroy(gameObject);
     }
